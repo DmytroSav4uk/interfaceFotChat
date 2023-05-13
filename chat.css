@@ -1,0 +1,149 @@
+@import url('https://fonts.cdnfonts.com/css/persona');
+
+body{
+    background: red;
+    font-family: 'Persona', sans-serif;
+}
+
+
+.father{
+
+    width: 90vw;
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat{
+    padding: 20px;
+    /*background: deepskyblue;*/
+    height: 500px;
+    width: 500px;
+}
+
+.his > p {
+    margin-left: 5px;
+}
+
+.his{
+    color: white;
+    width: 400px;
+    height: fit-content;
+    background: black;
+    padding: 1px;
+
+    -webkit-transform: skew(-15deg );
+    -moz-transform: skew(-15deg);
+    -o-transform: skew(15deg);
+
+    border-top: 2px solid white;
+    border-bottom: 1px solid white ;
+    border-right: 5px solid white ;
+    border-left: 2px solid white ;
+}
+
+
+.my{
+margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 500px;
+    color: white;
+    width: 400px;
+    height: fit-content;
+    background: black;
+    padding: 1px;
+
+    -webkit-transform: skew(15deg );
+    -moz-transform: skew(15deg);
+    -o-transform: skew(15deg);
+
+    border-top: 2px solid white;
+    border-bottom: 1px solid white ;
+    border-right: 2px solid white ;
+    border-left: 5px solid white ;
+}
+
+.my > p {
+    margin-left: 10px;
+}
+
+
+.avatar {
+z-index: 1;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-bottom: 20px solid #000000;
+    position: relative;
+left: -38px;
+    top: -33px;}
+
+.avatar::after {
+     content: '';
+     position: absolute;
+     left: -40px;
+     top: 20px;
+     width: 0;
+     height: 0;
+     border: 40px solid transparent;
+     border-top: 50px solid #000000;
+ }
+
+.avatarBorder {
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom: 20px solid #ffffff;
+    position: relative;
+    top: -80px;}
+
+.avatarBorder::after {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 20px;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-top: 70px solid #ffffff;
+}
+
+.hisFather{
+    display: flex;
+}
+
+
+.hisToMY{
+    z-index: -1;
+    background: black;
+    border-bottom:10px solid rgb(204, 14, 14);
+    background-clip: padding-box;
+
+
+
+    position: relative;
+    height: 20px;
+    width: 535px;
+    rotate: 22deg;
+    top: 29px;
+    left: 27px;
+}
+
+
+.myToHIS{
+    z-index: -1;
+    background: black;
+    border-bottom:10px solid rgb(204, 14, 14);
+    background-clip: padding-box;
+
+
+
+    position: relative;
+    height: 20px;
+    width: 450px;
+    rotate: -25deg;
+    top: -62px;
+    left: 231px;
+}
